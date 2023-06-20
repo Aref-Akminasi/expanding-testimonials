@@ -50,6 +50,8 @@ body {
   width: 400px;
   padding: 50px 0 50px 0;
   border-radius: 10pt;
+  height: 233px;
+  transition: all 0.3s ease-in;
 }
 
 .card img {
@@ -76,9 +78,16 @@ body {
 .testimonial {
   max-width: 264px;
   margin-top: 20px;
-  display: none;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s linear;
 }
 
 .active .testimonial {
   display: block;
+  height: auto;
+}
+
+.active {
+  height: 360px;
 }
