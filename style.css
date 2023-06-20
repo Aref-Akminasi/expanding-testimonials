@@ -49,6 +49,7 @@ body {
   width: 400px;
   padding: 50px 0 50px 0;
   border-radius: 10pt;
+  cursor: pointer;
 }
 
 .card img {
