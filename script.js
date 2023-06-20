@@ -6,7 +6,9 @@ cards.forEach((card) => {
       card.classList.remove('active');
     } else {
       closeCards();
-      card.classList.add('active');
+      setTimeout(() => {
+        card.classList.add('active');
+      }, 600);
     }
   });
 });
