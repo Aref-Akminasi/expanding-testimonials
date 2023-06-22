@@ -5,10 +5,10 @@ cards.forEach((card) => {
     if (card.classList.contains('active')) {
       card.classList.remove('active');
     } else {
-      closeCards();
+      closeCards(); //The function 'closeCards' will close all cards (it will take it 0.3s to close because of the transition) that is why a setTimeout is used for the delay
       setTimeout(() => {
         card.classList.add('active');
-      }, 600);
+      }, 500);
     }
   });
 });
